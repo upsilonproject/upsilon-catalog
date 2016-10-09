@@ -13,23 +13,28 @@
 		},
 		{
 			"identifier": "check_disk_free_over_ssh",
-			"command_line": "/usr/lib64/nagios/plugins/check_by_ssh -H $HOSTNAME -C '/usr/lib64/nagios/plugins/check_disk /'"
+			"command_line": "/usr/lib64/nagios/plugins/check_by_ssh -H $HOSTNAME -C '/usr/lib64/nagios/plugins/check_disk /'",
+			"icon": "disk.png"
 		},
 		{
 			"identifier": "gather_ip_addresses",
-			"command_line": "/usr/sbin/ip a"
+			"command_line": "/usr/sbin/ip a",
+			"icon": "console.png"
 		},
 		{
 			"identifier": "check_ssh",
-			"command_line": "/usr/lib64/nagios/plugins/check_ssh $ADDRESS"
+			"command_line": "/usr/lib64/nagios/plugins/check_ssh $ADDRESS",
+			"icon": "console.png"
 		},
 		{
 			"identifier": "check_updates",
-			"command_line": "/usr/lib64/nagios/plugns/check_updates"
+			"command_line": "/usr/lib64/nagios/plugns/check_updates",
+			"icon": "software_update_available.png"
 		},
 		{
 			"identifier": "check_disk_free",
-			"command_line": "/usr/lib64/nagios/plugins/check_disk -w $WARNING_PERCENT_FREE% -c $CRITICAL_PERCENT_FREE% $PATH"
+			"command_line": "/usr/lib64/nagios/plugins/check_disk -w $WARNING_PERCENT_FREE% -c $CRITICAL_PERCENT_FREE% $PATH",
+			"icon": "disk.png"
 		}
 	]
 }
