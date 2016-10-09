@@ -8,6 +8,26 @@
 		{
 			"identifier": "check_ssh", 
 			"command_line": "/usr/lib64/nagios/plugins/check_ssh $ADDRESS"
+		},
+		{
+			"identifier": "check_disk_free_over_ssh",
+			"command_line": "/usr/lib64/nagios/plugins/check_by_ssh -H $HOSTNAME -C '/usr/lib64/nagios/plugins/check_disk /'"
+		},
+		{
+			"identifier": "gather_ip_addresses",
+			"command_line": "/usr/sbin/ip a"
+		},
+		{
+			"identifier": "check_ssh",
+			"command_line": "/usr/lib64/nagios/plugins/check_ssh $ADDRESS"
+		},
+		{
+			"identifier": "check_updates",
+			"command_line": "/usr/lib64/nagios/plugns/check_updates"
+		},
+		{
+			"identifier": "check_disk_free",
+			"command_line": "/usr/lib64/nagios/plugins/check_disk -w $WARNING_PERCENT_FREE% -c $CRITICAL_PERCENT_FREE% $PATH"
 		}
 	]
 }
