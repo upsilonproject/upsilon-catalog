@@ -7,7 +7,8 @@
 		},
 		{
 			"identifier": "check_ssh", 
-			"command_line": "/usr/lib64/nagios/plugins/check_ssh $ADDRESS"
+			"command_line": "/usr/lib64/nagios/plugins/check_ssh $ADDRESS",
+			"icon": "console.png"
 		},
 		{
 			"identifier": "check_disk_free_over_ssh",
