@@ -3,7 +3,8 @@
 	"catalog": [
 		{
 			"identifier": "check_ping", 
-			"command_line": "/usr/lib64/nagios/plugins/check_ping -H $ADDRESS -w 75,10% -c 125,10% -p 3 -4"
+			"command_line": "/usr/lib64/nagios/plugins/check_ping -H $ADDRESS -w 75,10% -c 125,10% -p 3 -4",
+			"icon": "PingPlus.png"
 		},
 		{
 			"identifier": "check_ssh", 
