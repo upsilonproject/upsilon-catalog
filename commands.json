@@ -35,6 +35,11 @@
 			"identifier": "check_disk_free",
 			"command_line": "/usr/lib64/nagios/plugins/check_disk -w $WARNING_PERCENT_FREE% -c $CRITICAL_PERCENT_FREE% $PATH",
 			"icon": "disk.png"
+		},
+		{
+			"identifier": "collect_public_ip_ipify",
+			"command_line": "https://api.ipify.org/",
+			"icon": "console.png"
 		}
 	]
 }
