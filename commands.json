@@ -38,7 +38,7 @@
 		},
 		{
 			"identifier": "collect_public_ip_ipify",
-			"command_line": "https://api.ipify.org/",
+			"command_line": "/usr/bin/curl https://api.ipify.org/",
 			"icon": "console.png"
 		}
 	]
