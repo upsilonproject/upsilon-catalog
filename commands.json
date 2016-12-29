@@ -3,7 +3,8 @@
 	"catalog": [
 		{
 			"identifier": "check_ping", 
-			"command_line": "/usr/lib64/nagios/plugins/check_ping -H $ADDRESS -w 75,10% -c 125,10% -p 3 -4"
+			"command_line": "/usr/lib64/nagios/plugins/check_ping -H $ADDRESS -w 75,10% -c 125,10% -p 3 -4",
+			"icon": "PingPlus.png"
 		},
 		{
 			"identifier": "check_ssh", 
@@ -12,19 +13,23 @@
 		},
 		{
 			"identifier": "check_disk_free_over_ssh",
-			"command_line": "/usr/lib64/nagios/plugins/check_by_ssh -H $HOSTNAME -C '/usr/lib64/nagios/plugins/check_disk /'"
+			"command_line": "/usr/lib64/nagios/plugins/check_by_ssh -H $HOSTNAME -C '/usr/lib64/nagios/plugins/check_disk /'",
+			"icon": "disk.png"
 		},
 		{
 			"identifier": "gather_ip_addresses",
-			"command_line": "/usr/sbin/ip a"
+			"command_line": "/usr/sbin/ip a",
+			"icon": "console.png"
 		},
 		{
 			"identifier": "check_ssh",
-			"command_line": "/usr/lib64/nagios/plugins/check_ssh $ADDRESS"
+			"command_line": "/usr/lib64/nagios/plugins/check_ssh $ADDRESS",
+			"icon": "console.png"
 		},
 		{
 			"identifier": "check_updates",
-			"command_line": "/usr/lib64/nagios/plugns/check_updates"
+			"command_line": "/usr/lib64/nagios/plugns/check_updates",
+			"icon": "software_update_available.png"
 		},
 		{
 			"identifier": "check_rss",
@@ -32,7 +37,13 @@
 		},
 		{
 			"identifier": "check_disk_free",
-			"command_line": "/usr/lib64/nagios/plugins/check_disk -w $WARNING_PERCENT_FREE% -c $CRITICAL_PERCENT_FREE% $PATH"
+			"command_line": "/usr/lib64/nagios/plugins/check_disk -w $WARNING_PERCENT_FREE% -c $CRITICAL_PERCENT_FREE% $PATH",
+			"icon": "disk.png"
+		},
+		{
+			"identifier": "collect_public_ip_ipify",
+			"command_line": "/usr/bin/curl https://api.ipify.org/",
+			"icon": "console.png"
 		}
 	]
 }
