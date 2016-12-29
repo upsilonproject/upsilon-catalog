@@ -32,6 +32,10 @@
 			"icon": "software_update_available.png"
 		},
 		{
+			"identifier": "check_news",
+			"command_line": "/usr/sbin/check_news.py"
+		},
+		{
 			"identifier": "check_rss",
 			"command_line": "/usr/sbin/check_rss.py"
 		},
