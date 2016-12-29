@@ -27,6 +27,10 @@
 			"command_line": "/usr/lib64/nagios/plugns/check_updates"
 		},
 		{
+			"identifier": "check_rss",
+			"command_line": "/usr/sbin/check_rss.py"
+		},
+		{
 			"identifier": "check_disk_free",
 			"command_line": "/usr/lib64/nagios/plugins/check_disk -w $WARNING_PERCENT_FREE% -c $CRITICAL_PERCENT_FREE% $PATH"
 		}
