@@ -28,7 +28,7 @@
 		},
 		{
 			"identifier": "check_updates",
-			"command_line": "/usr/lib64/nagios/plugns/check_updates",
+			"command_line": "/usr/lib64/nagios/plugins/check_updates",
 			"icon": "software_update_available.png"
 		},
 		{
