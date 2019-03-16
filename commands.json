@@ -12,6 +12,11 @@
 			"icon": "console.png"
 		},
 		{
+			"identifier": "check_updates_over_ssh",
+			"command_line": "/usr/lib64/nagios/plugins/check_by_ssh -H $HOSTNAME -C '/usr/lib64/nagios/plugins/check_updates'",
+			"icon": "software_update_available.png"
+		},
+		{
 			"identifier": "check_disk_free_over_ssh",
 			"command_line": "/usr/lib64/nagios/plugins/check_by_ssh -H $HOSTNAME -C '/usr/lib64/nagios/plugins/check_disk /'",
 			"icon": "disk.png"
