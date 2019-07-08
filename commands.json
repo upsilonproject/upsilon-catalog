@@ -53,6 +53,12 @@
 			"identifier": "collect_public_ip_ipify",
 			"command_line": "/usr/bin/curl https://api.ipify.org/",
 			"icon": "console.png"
+		},
+		{
+			"identifier": "check_http_curl",
+			"command_line": "/usr/bin/curl --connect-timeout 3 -L $ADDRESS",
+			"icon": "domain.png"
 		}
+
 	]
 }
